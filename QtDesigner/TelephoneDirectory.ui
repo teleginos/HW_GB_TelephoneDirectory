@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>423</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Телефонный справочник</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(8, 8, 8);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="contacts">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 16pt &quot;Arial Rounded MT Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Контакты</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLineEdit" name="searchLineEdit">
+      <property name="font">
+       <font>
+        <family>Calisto MT</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(163, 163, 163);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Calisto MT&quot;;
+border-radius: 8px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Поиск...</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QListWidget" name="output_screen">
+      <property name="styleSheet">
+       <string notr="true">border: none;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="btn_openAddContact">
+      <property name="styleSheet">
+       <string notr="true">QPushButton:hover {
+	
+	color: rgb(67, 170, 62);
+	background-color: rgb(95, 95, 95);
+}
+
+QPushButton {
+	background-color: rgb(129, 129, 129);
+	font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: rgb(84, 84, 84);
+}</string>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="btn_import">
+      <property name="styleSheet">
+       <string notr="true">QPushButton:hover {
+	background-color: rgb(95, 95, 95);
+}
+
+QPushButton {
+	background-color: rgb(129, 129, 129);
+	font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: rgb(84, 84, 84);
+}</string>
+      </property>
+      <property name="text">
+       <string>Импортировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="magnifier">
+   <property name="icon">
+    <iconset theme="search">
+     <normaloff>../../../../../Downloads/3844432-magnifier-search-zoom_110300.png</normaloff>../../../../../Downloads/3844432-magnifier-search-zoom_110300.png</iconset>
+   </property>
+   <property name="text">
+    <string>search image</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="9"/>
+ <resources>
+  <include location="resurs.qrc"/>
+ </resources>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>2</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>2</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
